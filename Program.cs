@@ -10,14 +10,26 @@ namespace LC_Practice
     {
         public static void Main(string[] args)
         {
-            Test_RemoveDupSortedArray();
-            Test_MergeSortedArray();
-            Test_SumII();
-            Test_MissingNumber_FindMissingDuplicateNumber();
-            Test_MissingNumber_FindMissingNumber();
+            Test_quicksort();
+            //Test_RemoveDupSortedArray();
+            //Test_MergeSortedArray();
+            //Test_SumII();
+            //Test_MissingNumber_FindMissingDuplicateNumber();
+            //Test_MissingNumber_FindMissingNumber();
 
         }
 
+        public static void Test_quicksort()
+        {
+            quicksort qs = new quicksort();
+            int[] arr1 = new int[5]{3,2,9,8,1};
+            int[] exp1 = new int[5]{1,2,3,8,9};
+
+            qs.run_qsort(arr1,0,4);
+
+            
+
+        }
         public static void Test_RemoveDupSortedArray()
         {
             RemoveDupSortedArray rd = new RemoveDupSortedArray();
