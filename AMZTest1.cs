@@ -16,7 +16,7 @@ using System.Linq;
  */
 
 namespace LC_Practice
-{   public class AmazonTest1   
+{   public class AMZTest1   
     {
         public List<string> getDirectFriendsForUser(string user)
         {
