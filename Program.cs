@@ -10,7 +10,8 @@ namespace LC_Practice
     {
         public static void Main(string[] args)
         {
-            Test_quicksort();
+            Test_AMZTest2();
+            //Test_quicksort();
             //Test_RemoveDupSortedArray();
             //Test_MergeSortedArray();
             //Test_SumII();
@@ -19,6 +20,14 @@ namespace LC_Practice
 
         }
 
+        public static void Test_AMZTest2()
+        {
+            AMZTest2_ReturnDuplicateString rds = new AMZTest2_ReturnDuplicateString();
+            string input = "abcde_ab_bcd_ef";
+            string expected = "bcd";
+            string actual = rds.GetDuplicateString_1(input);
+            Console.WriteLine("Actual : "+actual + "  ; Expected = "+expected);
+        }
         public static void Test_quicksort()
         {
             quicksort qs = new quicksort();
